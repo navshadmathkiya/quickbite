@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Fresh From Market</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>📞 Call/WhatsApp: 91+ 91065 53241 </div>
+            <div>
+                <a href="tel:19005000">📱 Quick Order</a>
+                <a href="#" id="whatsappLink">💬 WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="container">
+                <a href="home.html" class="logo">
+                    <span> <img src="images/logo.jpeg" alt="FreshMart Logo" class="logo-img"> FreshMarket</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="owner.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <a href="cart.html" class="cart-icon">
+                        🛒
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Shopping Cart</h2>
+                <p>Review your items before checkout</p>
+            </div>
+
+            <div class="cart-container" id="cartContainer">
+                <!-- Cart items will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Empty Cart Message -->
+            <div class="empty-cart" id="emptyCart" style="display: none;">
+                <h2>Your cart is empty! 🛒</h2>
+                <p>Browse our fresh products and add items to your cart</p>
+                <a href="products.html" class="btn btn-primary" style="margin-top: 20px;">Browse Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3> <img src="images/logo.jpeg" alt="FreshMart Logo" class="logo-img"> FreshMarket</h3>
+                    <p>Bringing fresh produce from wholesale markets directly to your doorstep. Quality guaranteed, prices unbeatable.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icons">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-icons">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-icons">
+                            <img src="images/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 91+ 91065 53241</p>
+                    <p>📧 info@freshmarket.com</p>
+                    <p>📍 Ahmedabad, Gujarat, India</p>
+                    <p>🕒 Mon - Sat: 6 AM - 9 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Why Choose Us?</h3>
+                    <p>✓ Direct from wholesale market</p>
+                    <p>✓ Best prices guaranteed</p>
+                    <p>✓ Fresh daily delivery</p>
+                    <p>✓ Quality assured</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FreshMarket. All rights reserved. | Designed with ❤️ for fresh food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

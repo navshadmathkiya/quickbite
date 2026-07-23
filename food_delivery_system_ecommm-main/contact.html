@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fresh From Market</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>📞 Call/WhatsApp: 91+ 91065 53241 </div>
+            <div>
+                <a href="tel:19005000">📱 Quick Order</a>
+                <a href="#" id="whatsappLink">💬 WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="container">
+                <a href="home.html" class="logo">
+                    <span> <img src="images/logo.jpeg" alt="FreshMart Logo" class="logo-img"> FreshMarket</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="owner.html">Our Team</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <a href="cart.html" class="cart-icon">
+                        🛒
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 60px 0;">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you - let's connect!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info fade-in">
+                    <h3 style="margin-bottom: 30px; font-size: 28px;">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone / WhatsApp</h4>
+                            <p><a href="tel:19005000">91+ 91065 53241 </a></p>
+                            <p style="font-size: 14px; margin-top: 5px;">Available: Mon-Sat, 6 AM - 9 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:info@freshmarket.com">info@freshmarket.com</a></p>
+                            <p><a href="mailto:support@freshmarket.com">support@freshmarket.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Ahmedabad, Gujarat, India</p>
+                            <p style="font-size: 14px; margin-top: 5px;">Serving all major areas of Ahmedabad</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Service Hours</h4>
+                            <p><strong>Monday - Saturday:</strong> 6:00 AM - 9:00 PM</p>
+                            <p><strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 15px;">Quick Contact via WhatsApp</h4>
+                        <a href="https://wa.me/919005000" class="whatsapp-btn" target="_blank">
+                            <img src="images/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 15px;">Connect on Social Media</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icons">
+                                <img src="images/facebook.png" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-icons">
+                                <img src="images/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-icons">
+                                <img src="images/whatsapp.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="checkout-form fade-in" style="animation-delay: 0.2s;">
+                    <h3 style="margin-bottom: 20px; font-size: 28px;">Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" required placeholder="10-digit number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Related</option>
+                                <option value="delivery">Delivery Issue</option>
+                                <option value="quality">Product Quality</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Message 📤
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 50px auto 0;">
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">What are your delivery areas?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">We currently deliver to all major areas of Ahmedabad including Satellite, Maninagar, Vastrapur, Bopal, and more. Check our service areas on the "How It Works" page.</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">What is the minimum order value?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">Currently, there is no minimum order value. Order as little or as much as you need!</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">How fresh are the products?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">We purchase fresh produce from the wholesale market every morning at 5 AM and deliver the same day. Freshness is guaranteed!</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">What if I'm not satisfied with the quality?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">Customer satisfaction is our top priority. If you're not happy with any product, contact us immediately and we'll replace it or provide a full refund.</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 15px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Do you accept online payments?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">Currently, we accept Cash on Delivery (COD). Online payment options (UPI, Cards) will be available soon!</p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: var(--shadow);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Can I change or cancel my order?</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">Yes! You can modify or cancel your order by calling us or messaging on WhatsApp before we start preparing it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--primary-color); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; margin-bottom: 20px;">Ready to Experience Fresh?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.9;">
+                Start ordering fresh produce at wholesale prices today!
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="products.html" class="btn" style="background: white; color: var(--primary-color);">
+                    Browse Products
+                </a>
+                <a href="https://wa.me/919005000" class="btn btn-secondary" target="_blank">
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3> <img src="images/logo.jpeg" alt="FreshMart Logo" class="logo-img"> FreshMarket</h3>
+                    <p>Bringing fresh produce from wholesale markets directly to your doorstep. Quality guaranteed, prices unbeatable.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icons">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-icons">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-icons">
+                            <img src="images/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 91+ 91065 53241 </p>
+                    <p>📧 info@freshmarket.com</p>
+                    <p>📍 Ahmedabad, Gujarat, India</p>
+                    <p>🕒 Mon - Sat: 6 AM - 9 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Why Choose Us?</h3>
+                    <p>✓ Direct from wholesale market</p>
+                    <p>✓ Best prices guaranteed</p>
+                    <p>✓ Fresh daily delivery</p>
+                    <p>✓ Quality assured</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FreshMarket. All rights reserved. | Designed with ❤️ for fresh food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

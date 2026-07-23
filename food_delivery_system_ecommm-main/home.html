@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Fresh Vegetables Direct from Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <img src="images/logo.jpeg" alt="FreshMart Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>FreshMart</h1>
+                        <p>Fresh from Market Yard</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="home.html" class="nav-link active">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="owner.html" class="nav-link">Our Owner</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <!-- Cart & Mobile Menu -->
+                <div class="header-right">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="about.html">About Us</a>
+                <a href="owner.html">Our Owner</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="special-offer-badge">
+                        <i class="fas fa-fire"></i> SPECIAL OFFER
+                    </div>
+                    <h1 class="hero-title">
+                        Fresh Vegetables, 
+                        <span class="text-gradient">Direct from Market</span> 
+                        to Your Doorstep
+                    </h1>
+                    <p class="hero-description">
+                        Get fresh fruits and vegetables at wholesale rates - delivered to your home. 
+                        <strong>Save 20-30%</strong> on every order!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn-primary">
+                            <i class="fas fa-shopping-bag"></i> Order Now
+                        </a>
+                        <a href="#prices" class="btn-secondary">
+                            View Prices
+                        </a>
+                    </div>
+                    <div class="hero-info">
+                        <div class="info-box">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <p class="info-label">Call Us</p>
+                                <p class="info-value">91+ 91065 53241 </p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <p class="info-label">Free Delivery</p>
+                                <p class="info-value">All Areas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Image -->
+                <div class="hero-image-section">
+                    <img src="images/image3.jpg" alt="Fresh Vegetables" class="hero-image">
+                    <div class="hero-badge">
+                        <div class="badge-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="badge-text">
+                            <p class="badge-number">100%</p>
+                            <p class="badge-label">Fresh & Organic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-description">We bring you the freshest produce at unbeatable prices</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card green">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="feature-title">Direct from Market</h3>
+                    <p class="feature-description">We buy directly from wholesale market yards - no middlemen</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card orange">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="feature-title">Lower Prices</h3>
+                    <p class="feature-description">20-30% cheaper than local markets</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card blue">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="feature-title">Home Delivery</h3>
+                    <p class="feature-description">Free delivery to your doorstep</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card purple">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature-title">100% Fresh</h3>
+                    <p class="feature-description">Same-day delivery guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's Best Prices -->
+    <section class="prices-section" id="prices">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Today's Best Prices</h2>
+                <p class="section-description">Compare and save with our wholesale rates!</p>
+            </div>
+            
+            <div class="price-table-container">
+                <div class="price-table">
+                    <div class="price-table-header">
+                        <div>Product</div>
+                        <div>Market Price</div>
+                        <div>Our Price</div>
+                        <div>You Save</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="product-name">
+                            <i class="fas fa-circle green-dot"></i>
+                            <span> <img src="images/onion.jpg">  Onion </span>
+                        </div>
+                        <div class="old-price">₹40/kg</div>
+                        <div class="new-price">₹30/kg</div>
+                        <div>
+                            <span class="save-badge">Save ₹10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="product-name">
+                            <i class="fas fa-circle red-dot"></i>
+                            <span> <img src="images/tomato.jpg"> Tomato</span>
+                        </div>
+                        <div class="old-price">₹50/kg</div>
+                        <div class="new-price">₹38/kg</div>
+                        <div>
+                            <span class="save-badge">Save ₹12</span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="product-name">
+                            <i class="fas fa-circle yellow-dot"></i>
+                            <span> <img src="images/poteto.jpg"> Potato</span>
+                        </div>
+
+                        <div class="old-price">₹35/kg</div>
+                        <div class="new-price">₹25/kg</div>
+                        <div>
+
+                            <span class="save-badge"> Save ₹10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="product-name">
+                            <i class="fas fa-circle orange-dot"></i>
+                            <span> <img src="images/gajar.jpg"> Carrot</span>
+                        </div>
+                        <div class="old-price">₹50/kg</div>
+                        <div class="new-price">₹40/kg</div>
+                        <div>
+                            <span class="save-badge">Save ₹10</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="products.html" class="btn-primary">
+                        View All Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Simple, fast, and convenient - just 3 easy steps!</p>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon green-bg">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3 class="step-title">Place Your Order</h3>
+                    <p class="step-description">Browse our website or WhatsApp us. Select vegetables and add to cart.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon blue-bg">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3 class="step-title">We Purchase</h3>
+                    <p class="step-description">Every morning we buy fresh produce from wholesale market yard.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon purple-bg">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3 class="step-title">We Deliver</h3>
+                    <p class="step-description">Same-day delivery to your doorstep. Pay on delivery - Cash or UPI!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-description">Join hundreds of happy customers!</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <img src="images/image5.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Much cheaper than local market and quality is excellent! Fresh vegetables delivered right at my doorstep."</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Priya Shah</p>
+                        <p class="customer-role">Homemaker, Ahmedabad</p>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <img src="images/image6.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Fresh vegetables delivered at home. Saves so much time! No need to visit crowded markets anymore."</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Rahul Patel</p>
+                        <p class="customer-role">Software Engineer, Satellite</p>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <img src="images/image7.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best quality vegetables at wholesale prices! I'm saving almost ₹500 every month. Highly recommended!"</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Anjali Mehta</p>
+                        <p class="customer-role">Teacher, Vastrapur</p>
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <img src="images/image8.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Amazing service! Fresh vegetables every time. The delivery is always on time and quality is superb."</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Karan Desai</p>
+                        <p class="customer-role">Business Owner, Bopal</p>
+                    </div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="review-card">
+                    <img src="images/image9.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <p class="review-text">"Very convenient! I order through WhatsApp and get fresh veggies the same day. Great prices too!"</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Neha Sharma</p>
+                        <p class="customer-role">Doctor, Maninagar</p>
+                    </div>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="review-card">
+                    <img src="images/image10.jpg" alt="Customer" class="customer-img">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <p class="review-text">"Excellent quality and service! My family loves the fresh vegetables. Will definitely recommend to friends."</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Vikram Singh</p>
+                        <p class="customer-role">Architect, Thaltej</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Save Money on Fresh Vegetables?</h2>
+                <p class="cta-description">Join 500+ happy customers. Order now and get fresh vegetables delivered today!</p>
+                <div class="cta-buttons">
+                    <a href="products.html" class="btn-white">
+                        <i class="fas fa-shopping-bag"></i> Start Shopping
+                    </a>
+                    <a href="contact.html" class="btn-outline">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpeg" alt="FreshMart">
+                        <h3>FreshMart</h3>
+                    </div>
+                    <p class="footer-description">Fresh vegetables and fruits delivered directly from wholesale market to your doorstep at unbeatable prices.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span> 91+ 9106553241</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@freshmart.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 7AM - 8PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+                    </div>
+                    <p class="footer-social-text">Join 500+ customers on Instagram for daily fresh updates!</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreshMart. All rights reserved. | Made with <i class="fas fa-heart"></i> for fresh food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20order%20fresh%20vegetables" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
