@@ -382,7 +382,7 @@ function setupCheckoutForm() {
         const message = createOrderMessage(orderData);
         
         // Send to WhatsApp
-        const phoneNumber = '919005000';
+        const phoneNumber = '9106553241';
         window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
         
         // Clear cart
@@ -395,7 +395,7 @@ function setupCheckoutForm() {
         
         // Redirect after delay
         setTimeout(() => {
-            window.location.href = 'home.html';
+            window.location.href = 'index.html';
         }, 2000);
     });
 }
@@ -463,7 +463,7 @@ Message:
 ${formData.get('message')}
         `;
         
-        const phoneNumber = '919005000';
+        const phoneNumber = '9106553241';
         window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
         
         contactForm.reset();
